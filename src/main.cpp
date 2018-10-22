@@ -1,14 +1,15 @@
-
-void func(int& i){
-    i++;
+inline int func(int i){
+    return i*i;
 }
 
 int main(){
-    int i = 0;
+    int i = 2;
 
-    func(i);
-    func(i);
-    func(i);
+    i = func(i);
+    i = func(i);
+    i = func(i);
+
+    //std::cout << i << std::endl;
 
     return i;
 }
