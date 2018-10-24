@@ -1,15 +1,17 @@
-inline int func(int i){
+#include <iostream>
+
+int func(int i){
     return i*i;
 }
 
-int main(){
-    int i = 2;
+int main(int argc, char* argv[]){
+    int i = atoi(argv[1]);
 
     i = func(i);
     i = func(i);
     i = func(i);
 
-    //std::cout << i << std::endl;
+    std::cout << i << std::endl;
 
-    return i;
+    return 0;
 }
